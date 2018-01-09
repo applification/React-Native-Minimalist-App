@@ -6,7 +6,12 @@ import { linkTo } from '@storybook/addon-links';
 
 import CenterView from './CenterView';
 
-import { Text, Content, HeaderText } from 'react-native-elements-minimalist';
+import {
+  Text,
+  Content,
+  HeaderText,
+  BodyText
+} from 'react-native-elements-minimalist';
 
 storiesOf('Minimalist UI Text', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
@@ -27,5 +32,9 @@ storiesOf('HeaderText', module)
     <HeaderText color="red">Red Header</HeaderText>
   ))
   .add('HeaderText should be single line even if long', () => (
-    <HeaderText>A really long header</HeaderText>
+    <HeaderText>React Native Minimalist</HeaderText>
   ));
+
+storiesOf('BodyText', module).add('BodyText', () => (
+  <BodyText>Body text</BodyText>
+));
