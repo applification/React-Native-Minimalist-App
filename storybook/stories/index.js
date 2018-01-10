@@ -6,12 +6,7 @@ import { linkTo } from '@storybook/addon-links';
 
 import CenterView from './CenterView';
 
-import {
-  Text,
-  Content,
-  HeaderText,
-  BodyText
-} from 'react-native-elements-minimalist';
+import { Text, Content, HeaderText, BodyText } from 'react-native-minimalist';
 
 storiesOf('Minimalist UI Text', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
