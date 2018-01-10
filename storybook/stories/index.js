@@ -6,7 +6,13 @@ import { linkTo } from '@storybook/addon-links';
 
 import CenterView from './CenterView';
 
-import { Text, Content, HeaderText, BodyText } from 'react-native-minimalist';
+import {
+  Text,
+  Content,
+  HeaderText,
+  BodyText,
+  Profile
+} from 'react-native-minimalist';
 
 storiesOf('Minimalist UI Text', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
@@ -33,3 +39,14 @@ storiesOf('HeaderText', module)
 storiesOf('BodyText', module).add('BodyText', () => (
   <BodyText>Body text</BodyText>
 ));
+
+storiesOf('Profile', module)
+  .add('Profile', () => <Profile />)
+  .add('Profile URI', () => (
+    <Profile
+      source={{
+        uri:
+          'https://pbs.twimg.com/profile_images/941645845409226752/Lt1apZ3Q_400x400.jpg'
+      }}
+    />
+  ));
