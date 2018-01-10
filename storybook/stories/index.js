@@ -56,4 +56,10 @@ storiesOf('Divider', module)
   .add('Divider Red', () => <Divider color="red" />)
   .add('Divider fullWidth', () => <Divider fullWidth />);
 
-storiesOf('Image', module).add('Image', () => <Image />);
+storiesOf('Image', module).add('Image', () => (
+  <Image
+    imageURL={
+      'https://scontent-lht6-1.cdninstagram.com/t51.2885-15/sh0.08/e35/p640x640/26152588_1188914984576015_4446380707253583872_n.jpg'
+    }
+  />
+));
