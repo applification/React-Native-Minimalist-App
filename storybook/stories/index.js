@@ -11,7 +11,8 @@ import {
   HeaderText,
   BodyText,
   Profile,
-  Divider
+  Divider,
+  Image
 } from 'react-native-minimalist';
 
 storiesOf('Content', module)
@@ -54,3 +55,5 @@ storiesOf('Divider', module)
   .add('Divider', () => <Divider />)
   .add('Divider Red', () => <Divider color="red" />)
   .add('Divider fullWidth', () => <Divider fullWidth />);
+
+storiesOf('Image', module).add('Image', () => <Image />);
