@@ -7,7 +7,6 @@ import { linkTo } from '@storybook/addon-links';
 import CenterView from './CenterView';
 
 import {
-  Text,
   Content,
   HeaderText,
   BodyText,
@@ -15,16 +14,15 @@ import {
   Divider
 } from 'react-native-minimalist';
 
-storiesOf('Minimalist UI Text', module)
-  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
-  .add('Text', () => <Text>Hey Hey Hey!!!</Text>)
-  .add('Text Other', () => <Text>Other text</Text>);
-
-storiesOf('Minimalist UI Content', module)
-  .add('DefaultProps (white)', () => <Content />)
+storiesOf('Content', module)
+  .add('DefaultProps (white)', () => (
+    <Content>
+      <HeaderText>Children props</HeaderText>
+    </Content>
+  ))
   .add('Passed in Props (pink)', () => (
     <Content backgroundColor="pink">
-      <Text>Children props</Text>
+      <HeaderText>Children props</HeaderText>
     </Content>
   ));
 
