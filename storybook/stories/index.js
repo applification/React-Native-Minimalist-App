@@ -12,7 +12,9 @@ import {
   BodyText,
   Profile,
   Divider,
-  Image
+  Image,
+  List,
+  ListItem
 } from 'react-native-minimalist';
 
 storiesOf('Content', module)
@@ -62,4 +64,13 @@ storiesOf('Image', module).add('Image', () => (
       'https://scontent-lht6-1.cdninstagram.com/t51.2885-15/sh0.08/e35/p640x640/26152588_1188914984576015_4446380707253583872_n.jpg'
     }
   />
+));
+
+const peopleData = require('./data/people.json');
+storiesOf('List', module).add('List', () => <List data={peopleData} />);
+
+storiesOf('ListItem', module).add('ListItem', () => (
+  <Content>
+    <ListItem title="List item title" />
+  </Content>
 ));

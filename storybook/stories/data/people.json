@@ -1,0 +1,180 @@
+{
+  "results": [
+    {
+      "name": {
+        "title": "mr",
+        "first": "nicholas",
+        "last": "ray"
+      },
+      "email": "nicholas.ray@example.com",
+      "id": {
+        "name": "TFN",
+        "value": "137874010"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/49.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/49.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/49.jpg"
+      }
+    },
+    {
+      "name": {
+        "title": "mr",
+        "first": "simão",
+        "last": "silva"
+      },
+      "email": "simão.silva@example.com",
+      "id": {
+        "name": "",
+        "value": null
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/58.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/58.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/58.jpg"
+      }
+    },
+    {
+      "name": {
+        "title": "mr",
+        "first": "marein",
+        "last": "van der woude"
+      },
+      "email": "marein.vanderwoude@example.com",
+      "id": {
+        "name": "BSN",
+        "value": "63508473"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/67.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/67.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/67.jpg"
+      }
+    },
+    {
+      "name": {
+        "title": "ms",
+        "first": "nanna",
+        "last": "thomsen"
+      },
+      "email": "nanna.thomsen@example.com",
+      "id": {
+        "name": "CPR",
+        "value": "298825-2097"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/77.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/77.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/77.jpg"
+      }
+    },
+    {
+      "name": {
+        "title": "mrs",
+        "first": "ida",
+        "last": "nielsen"
+      },
+      "email": "ida.nielsen@example.com",
+      "id": {
+        "name": "CPR",
+        "value": "127575-0058"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/54.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/54.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/54.jpg"
+      }
+    },
+    {
+      "name": {
+        "title": "mr",
+        "first": "gerald",
+        "last": "ramirez"
+      },
+      "email": "gerald.ramirez@example.com",
+      "id": {
+        "name": "SSN",
+        "value": "563-51-1058"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/49.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/49.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/49.jpg"
+      }
+    },
+    {
+      "name": {
+        "title": "mr",
+        "first": "kevin",
+        "last": "bryant"
+      },
+      "email": "kevin.bryant@example.com",
+      "id": {
+        "name": "PPS",
+        "value": "3913664T"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/26.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/26.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/26.jpg"
+      }
+    },
+    {
+      "name": {
+        "title": "mr",
+        "first": "valtteri",
+        "last": "kyllo"
+      },
+      "email": "valtteri.kyllo@example.com",
+      "id": {
+        "name": "HETU",
+        "value": "564-2332"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/81.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/81.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/81.jpg"
+      }
+    },
+    {
+      "name": {
+        "title": "ms",
+        "first": "sophie",
+        "last": "powell"
+      },
+      "email": "sophie.powell@example.com",
+      "id": {
+        "name": "PPS",
+        "value": "8994818T"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/79.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/79.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/79.jpg"
+      }
+    },
+    {
+      "name": {
+        "title": "miss",
+        "first": "molly",
+        "last": "martin"
+      },
+      "email": "molly.martin@example.com",
+      "id": {
+        "name": "PPS",
+        "value": "3022248T"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/73.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/73.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/73.jpg"
+      }
+    }
+  ],
+  "info": {
+    "seed": "${seed}",
+    "results": 20,
+    "page": 1,
+    "version": "1.1"
+  }
+}
