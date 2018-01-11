@@ -12,7 +12,8 @@ import {
   BodyText,
   Profile,
   Divider,
-  Image,
+  Photo,
+  PhotoInfo,
   List,
   ListItem
 } from 'react-native-minimalist';
@@ -51,15 +52,16 @@ storiesOf('Profile', module)
           'https://pbs.twimg.com/profile_images/941645845409226752/Lt1apZ3Q_400x400.jpg'
       }}
     />
-  ));
+  ))
+  .add('Profile small', () => <Profile small />);
 
 storiesOf('Divider', module)
   .add('Divider', () => <Divider />)
   .add('Divider Red', () => <Divider color="red" />)
   .add('Divider fullWidth', () => <Divider fullWidth />);
 
-storiesOf('Image', module).add('Image', () => (
-  <Image
+storiesOf('Photo', module).add('Photo', () => (
+  <Photo
     imageURL={
       'https://scontent-lht6-1.cdninstagram.com/t51.2885-15/sh0.08/e35/p640x640/26152588_1188914984576015_4446380707253583872_n.jpg'
     }
@@ -74,3 +76,34 @@ storiesOf('ListItem', module).add('ListItem', () => (
     <ListItem title="List item title" />
   </Content>
 ));
+
+storiesOf('PhotoInfo', module)
+  .add('PhotoInfo', () => (
+    <PhotoInfo
+      photo={{
+        uri: 'https://s3.amazonaws.com/uifaces/faces/twitter/kfriedson/128.jpg'
+      }}
+      title="josh.duplessis"
+      icon={require('../../imgs/more.png')}
+    />
+  ))
+  .add('PhotoInfo Title ONLY', () => (
+    <PhotoInfo title="josh.duplessis" icon={require('../../imgs/more.png')} />
+  ))
+  .add('PhotoInfo Title & Subtitle', () => (
+    <PhotoInfo
+      title="bentierney"
+      subtitle="Guitar Center"
+      icon={require('../../imgs/more.png')}
+    />
+  ))
+  .add('PhotoInfo Title & Subtitle + Photo', () => (
+    <PhotoInfo
+      photo={{
+        uri: 'https://s3.amazonaws.com/uifaces/faces/twitter/kfriedson/128.jpg'
+      }}
+      title="bentierney"
+      subtitle="Guitar Center"
+      icon={require('../../imgs/more.png')}
+    />
+  ));

@@ -1,57 +1,70 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
+import { Navigation } from 'react-native-navigation';
 
-import React, { Component } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import { registerScreens } from './screens';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+registerScreens();
+const appStyle = {
+  orientation: 'portrait',
+  hideBackButtonTitle: false,
+  navBarLeftButtonColor: '#000000',
+  navBarLeftButtonFontSize: 14,
+  navBarLeftButtonFontWeight: '600',
+  navBarRightButtonColor: '#000000',
+  navBarRightButtonFontSize: 14,
+  navBarRightButtonFontWeight: '600'
+};
 
-export default class App extends Component<{}> {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-      </View>
-    );
-  }
-}
+const navigatorStyle = {
+  navBarBackgroundColor: '#FAFAFA',
+  navBarButtonColor: '#000000',
+  navBarSelectedButtonColor: '#000000',
+  navBarTextColor: '#000000'
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+const tabsStyle = {
+  tabBarBackgroundColor: '#FAFAFA',
+  tabBarSelectedButtonColor: '#000000'
+};
+
+Navigation.startTabBasedApp({
+  tabs: [
+    {
+      screen: 'app.Home',
+      icon: require('./imgs/one.png'),
+      selectedIcon: require('./imgs/one_selected.png'),
+      title: 'Instagrammy',
+      iconInsets: {
+        top: 8,
+        left: 0,
+        bottom: -6,
+        right: 0
+      }
+    },
+    {
+      screen: 'app.Profile',
+      icon: require('./imgs/two.png'),
+      selectedIcon: require('./imgs/two_selected.png'),
+      title: 'Profile',
+      iconInsets: {
+        top: 8,
+        left: 0,
+        bottom: -6,
+        right: 0
+      }
+    },
+    {
+      screen: 'app.Settings',
+      icon: require('./imgs/three.png'),
+      selectedIcon: require('./imgs/three_selected.png'),
+      title: 'Settings',
+      iconInsets: {
+        top: 8,
+        left: 0,
+        bottom: -6,
+        right: 0
+      }
+    }
+  ],
+  appStyle,
+  tabsStyle
 });
