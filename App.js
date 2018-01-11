@@ -29,13 +29,12 @@ const tabsStyle = {
 Navigation.startTabBasedApp({
   tabs: [
     {
-      label: 'Home',
       screen: 'app.Home',
       icon: require('./imgs/one.png'),
       selectedIcon: require('./imgs/one_selected.png'),
       title: 'Instagrammy',
       iconInsets: {
-        top: 6,
+        top: 8,
         left: 0,
         bottom: -6,
         right: 0
@@ -47,7 +46,7 @@ Navigation.startTabBasedApp({
       selectedIcon: require('./imgs/two_selected.png'),
       title: 'Profile',
       iconInsets: {
-        top: 6,
+        top: 8,
         left: 0,
         bottom: -6,
         right: 0
@@ -59,7 +58,7 @@ Navigation.startTabBasedApp({
       selectedIcon: require('./imgs/three_selected.png'),
       title: 'Settings',
       iconInsets: {
-        top: 6,
+        top: 8,
         left: 0,
         bottom: -6,
         right: 0

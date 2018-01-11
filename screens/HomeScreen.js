@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
-import { View, Text, AlertIOS } from 'react-native';
+import { View, Text, AlertIOS, Image, ScrollView } from 'react-native';
 import { Navigation } from 'react-native-navigation';
-import { Content, HeaderText, BodyText } from 'react-native-minimalist';
+import {
+  Content,
+  HeaderText,
+  BodyText,
+  Profile,
+  Photo,
+  PhotoInfo
+} from 'react-native-minimalist';
 
 const MenuIcon = require('../imgs/navicon_menu.png');
 
@@ -25,8 +32,8 @@ class HomeScreen extends Component {
     ],
     rightButtons: [
       {
-        id: 'edit',
-        testID: 'edit',
+        id: 'search',
+        testID: 'search',
         systemItem: 'search'
       }
     ]
@@ -39,23 +46,34 @@ class HomeScreen extends Component {
 
   onNavigatorEvent(event) {
     if (event.type === 'NavBarButtonPress') {
-      if (event.id === 'edit') {
-        AlertIOS.alert('NavBar', 'Edit button pressed!!');
-      } else if (event.id === 'search') {
+      if (event.id === 'search') {
         AlertIOS.alert('NavBar', 'Search button pressed!!');
+      } else if (event.id === 'menu') {
+        AlertIOS.alert('NavBar', 'Menu button pressed!!');
       }
     }
   }
 
   render() {
     return (
-      <Content>
-        <HeaderText>Home</HeaderText>
-        <BodyText>
-          Some body text that wraps on to the next line with the correct
-          padding.
-        </BodyText>
-      </Content>
+      <ScrollView>
+        <Content>
+          <PhotoInfo
+            photo={{
+              uri:
+                'https://s3.amazonaws.com/uifaces/faces/twitter/kfriedson/128.jpg'
+            }}
+            title="bentierney"
+            subtitle="Guitar Center"
+            icon={require('../imgs/more.png')}
+          />
+          <Photo
+            imageURL={
+              'https://scontent-lht6-1.cdninstagram.com/t51.2885-15/sh0.08/e35/p640x640/26152588_1188914984576015_4446380707253583872_n.jpg'
+            }
+          />
+        </Content>
+      </ScrollView>
     );
   }
 }
